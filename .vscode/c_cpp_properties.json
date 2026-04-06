@@ -1,0 +1,34 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Win32-PS1",
+      "compilerPath": "C:/psn00bsdk/bin/mipsel-none-elf-gcc.exe",
+      "intelliSenseMode": "windows-gcc-x64",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src",
+        "C:/psn00bsdk/include/libpsn00b",
+        "C:/psn00bsdk/lib/gcc/mipsel-none-elf/12.3.0/include",
+        "C:/psn00bsdk/lib/gcc/mipsel-none-elf/12.3.0/include-fixed"
+      ],
+      "defines": [
+        "PSN00BSDK=1"
+      ],
+      "compilerArgs": [
+        "-ffreestanding",
+        "-fno-builtin",
+        "-nostdlib",
+        "-msoft-float",
+        "-march=r3000",
+        "-mtune=r3000",
+        "-mabi=32",
+        "-mno-mt",
+        "-mno-llsc",
+        "-G0"
+      ]
+    }
+  ]
+}
